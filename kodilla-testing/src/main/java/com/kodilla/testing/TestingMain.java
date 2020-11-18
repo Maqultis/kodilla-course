@@ -17,22 +17,26 @@ public class TestingMain {
             System.out.println("Error!");
         }
 
-        Calculator calc = new Calculator(12, 3);
-        calc.add(12, 3);
+        Calculator calc = new Calculator();
 
-        if (calc.getAddResult()==(15)) {
-            System.out.println("The result of adding " + calc.getA() + " to " + calc.getB() + " is " + calc.getAddResult()
+        int a = 12;
+        int b = 3;
+        int resultAdd = calc.add(a, b);
+
+
+        if (resultAdd==15) {
+            System.out.println("The result of adding " + a + " to " + b + " is " + resultAdd
                     +"\n Test of add method is OK");
         }
         else {
             System.out.println("Error!");
         }
 
-        calc.subtract(12, 3);
-        
-        if (calc.getSubtractResult()==(9)) {
-            System.out.println("The result of subtracting " + calc.getB() + " from " + calc.getA() + " is " +
-                    calc.getSubtractResult() + "\n Test of add method is OK");
+        int resultSubtract = calc.subtract(a, b);
+
+        if (resultSubtract==9) {
+            System.out.println("The result of subtracting " + b + " from " + a + " is " +
+                    resultSubtract + "\n Test of add method is OK");
         }
         else {
             System.out.println("Error!");
