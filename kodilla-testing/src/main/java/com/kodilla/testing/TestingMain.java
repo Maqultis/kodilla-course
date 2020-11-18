@@ -23,7 +23,6 @@ public class TestingMain {
         int b = 3;
         int resultAdd = calc.add(a, b);
 
-
         if (resultAdd==15) {
             System.out.println("The result of adding " + a + " to " + b + " is " + resultAdd
                     +"\n Test of add method is OK");
