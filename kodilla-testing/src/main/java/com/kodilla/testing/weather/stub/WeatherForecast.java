@@ -39,7 +39,7 @@ public class WeatherForecast {
         Collections.sort(temperaturesList);
         int middle = temperaturesList.size()/2;
         if (temperaturesList.size() % 2 == 0) {
-            return 0.5 * (temperaturesList.get(middle).doubleValue() + temperaturesList.get(middle-1).doubleValue());
+            return 0.5 * (temperaturesList.get(middle) + temperaturesList.get(middle-1));
         } else {
             return temperaturesList.get(middle).doubleValue();
         }
