@@ -21,7 +21,7 @@ public class FlightFinderRunner {
             boolean flight4 = finder.findFlight(tokToWaw);
             System.out.println("Flight Tokyo - Warszawa: " + flight4);
         } catch (RouteNotFoundException e) {
-            System.out.println("Airport doesn't exist.");
+            System.out.println(e.getMessage());
         }
     }
 }
